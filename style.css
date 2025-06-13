@@ -326,6 +326,7 @@ a {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--dark-color);
+    text-align: center;
 }
 
 .legal-container h2 {
@@ -333,6 +334,8 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 10px;
 }
 
 .legal-container h3 {
@@ -340,4 +343,44 @@ a {
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--dark-color);
+}
+
+/* --- Styles für Speisekarte --- */
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.menu-item-header h4 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.menu-item-description {
+    font-size: 1rem;
+    color: var(--grey-color);
+    margin: 0;
 }
