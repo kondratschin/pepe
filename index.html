@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<script type="text/javascript" charset="UTF-8"
+		src="//cdn.cookie-script.com/s/59efcccc8350ab1daf08d10bce09dec8.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Pizzeria da Pepe - Italienische Spezialitäten in Bad Boll</title>
+    <meta name="description" content="Genießen Sie authentische italienische Küche im Ristorante Pizzeria da Pepe in Bad Boll. Reservieren Sie Ihren Tisch oder entdecken Sie unsere Speisekarte.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/d2b3405c-f704-48d5-9fb8-7d5a81ded5b1/cd.js" type="text/javascript" async></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo-link handwriting">Ristorante Pepe</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#zeiten" class="nav-link">Öffnungszeiten</a></li>
+                <li class="nav-item"><a href="#anfahrt" class="nav-link">Anfahrt</a></li>
+                <li class="nav-item"><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="./downloads/speisekarte.pdf" target="_blank" class="nav-link btn">Speisekarte</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <img src="./img/logo.svg" alt="Logo von Ristorante Pepe" class="hero-logo">
+                <h1 class="handwriting headline">Italienische Lebensfreude</h1>
+                <h2 class="subtitle">Authentische Rezepte mit Herz und Leidenschaft</h2>
+            </div>
+        </section>
+
+        <section class="container notice">
+            <h3>Geänderte Öffnungszeiten an Ostersonntag</h3>
+            <p>Am Ostersonntag, 20.04.2025 haben wir von 11:00 - 15:00 Uhr für Sie geöffnet. Abends bleibt unser Restaurant geschlossen.</p>
+        </section>
+
+        <section id="zeiten" class="container">
+            <h2>Unsere Öffnungszeiten</h2>
+            <div class="timetable">
+                <div class="time-block">
+                    <h4>Dienstag - Samstag</h4>
+                    <p>Restaurant: 16:30 - 22:00 Uhr</p>
+                    <p>Küche: 16:30 - 21:00 Uhr</p>
+                </div>
+                <div class="time-block">
+                    <h4>Sonntag</h4>
+                    <p>11:00 - 14:00 Uhr & 16:30 - 22:00 Uhr</p>
+                    <p>Küche: 11:00 - 13:00 Uhr & 16:30 - 21:00 Uhr</p>
+                </div>
+                 <div class="time-block">
+                    <h4>Montag</h4>
+                    <p>Ruhetag</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="anfahrt" class="container">
+            <h2>Anfahrt</h2>
+            <p>Sie finden uns hier:</p>
+            <a href="https://maps.app.goo.gl/uB8g4vPjZ4s8g3yh8" target="_blank">Erlengarten 37, 73087 Bad Boll</a>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.965902167528!2d9.61793607693077!3d48.66016911211758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799a16a4959458b%3A0x7b1b59a9a3f5f643!2sErlengarten%2037%2C%2073087%20Bad%20Boll!5e0!3m2!1sde!2sde!4v1718301198888!5m2!1sde!2sde" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="kontakt" class="container">
+            <h2>Kontakt & Reservierung</h2>
+            <p>Rufen Sie uns gerne an, um einen Tisch zu reservieren oder eine Bestellung aufzugeben.</p>
+            <a href="tel:+497164800333" class="btn contact-btn">Tel: +49 (0) 7164 800 333</a>
+            <p>Oder schreiben Sie uns eine E-Mail:</p>
+            <a href="mailto:info@ristorante-pepe.de" class="contact-link">info@ristorante-pepe.de</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                &copy; <span id="current-year"></span> Alberico Paladino <br> Ristorante Pizzeria da Pepe
+            </div>
+            <div class="footer-right">
+                <a href="impressum.html" class="footer-link">Impressum</a> | 
+                <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript für das Hamburger Menü
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+        
+        // Aktuelles Jahr für den Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

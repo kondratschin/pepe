@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Ristorante Pepe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo-link handwriting">Ristorante Pepe</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#zeiten" class="nav-link">Öffnungszeiten</a></li>
+                <li class="nav-item"><a href="index.html#anfahrt" class="nav-link">Anfahrt</a></li>
+                <li class="nav-item"><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="./downloads/speisekarte_2024.pdf" target="_blank" class="nav-link btn">Speisekarte</a></li>
+            </ul>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-container">
+        <h1>Impressum</h1>
+        <p>
+            Alberico Paladino<br>
+            Erlengarten 37<br>
+            73087 Bad Boll<br>
+            <br>
+            Tel: +49 7164 800 333<br>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                &copy; <span id="current-year"></span> Alberico Paladino <br> Ristorante Pizzeria da Pepe
+            </div>
+            <div class="footer-right">
+                <a href="impressum.html" class="footer-link">Impressum</a> | 
+                <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* --- CSS Variablen für einfaches Anpassen --- */
+:root {
+    --primary-color: #b90a0a;
+    --dark-color: #232629;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --grey-color: #727586;
+    --font-main: 'Roboto', sans-serif;
+    --font-handwriting: 'Pacifico', cursive;
+}
+
+/* --- Globale Styles & Resets --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.handwriting {
+    font-family: var(--font-handwriting);
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Header & Navigation --- */
+.header {
+    background-color: var(--dark-color);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.logo-link {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e62a2a;
+}
+
+/* --- Hamburger Menü für Mobile --- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Hero Sektion --- */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px; /* Platz für den fixierten Header */
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/aot.jpg') no-repeat center center/cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.hero-content {
+    width: 80%;
+}
+
+.hero-logo {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.hero .headline {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Inhaltssektionen --- */
+.notice {
+    background-color: var(--light-color);
+    border-left: 5px solid var(--primary-color);
+    text-align: left;
+    max-width: 800px;
+}
+
+.timetable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.time-block {
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.time-block h4 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-link {
+    font-size: 1.2rem;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+.footer-right {
+    text-align: right;
+}
+
+.footer-link {
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* --- Responsive Design --- */
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--dark-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .hero .headline { font-size: 2.5rem; }
+    .hero .subtitle { font-size: 1.2rem; }
+    h2 { font-size: 2rem; }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* --- Styles für Impressum & Datenschutz --- */
+.legal-container {
+    padding: 120px 20px 40px; /* Oben mehr Padding wegen fixiertem Header */
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    text-align: left;
+}
+
+.legal-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.legal-container h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.legal-container h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
